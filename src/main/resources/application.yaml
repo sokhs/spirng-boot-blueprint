@@ -1,3 +1,18 @@
 spring:
   application:
     name: spring-boot-blueprint
+
+  # Postgres Connection
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: suadm
+    password: secretpwd
+
+  # JPA / Hibernate
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      format_sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
